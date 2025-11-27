@@ -1,20 +1,20 @@
-from src.power import power_function
-from src.constants import SAMPLE_CONSTANT
+from src.utils import math_s, sort_s, struct_s
 
+def main():
+    while True:
+        c = input().lower()
+        match c:
+            case "exit":
+                break
+            case "math":
+                math_s()
+            case "sort":
+                sort_s()
+            case "struct":
+                struct_s()
+            case _:
+                print("Неизвестная команда")
 
-def main() -> None:
-    """
-    Обязательнная составляющая программ, которые сдаются. Является точкой входа в приложение
-    :return: Данная функция ничего не возвращает
-    """
-
-    target, degree = map(int, input("Введите два числа разделенные пробелом: ").split(" "))
-
-    result = power_function(target=target, power=degree)
-
-    print(result)
-
-    print(SAMPLE_CONSTANT)
 
 if __name__ == "__main__":
     main()
