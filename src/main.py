@@ -15,6 +15,5 @@ def main():
             case _:
                 print("Неизвестная команда")
 
-
 if __name__ == "__main__":
     main()

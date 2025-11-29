@@ -102,7 +102,7 @@ def hp(a, n, i):
 
     if left < n and a[left] > a[l]:
         l = left
-    if rg < n and a[rg] > rg[l]:
+    if rg < n and a[rg] > a[l]:
         l = rg
     if l != i:
         a[i], a[l] = a[l], a[i]
